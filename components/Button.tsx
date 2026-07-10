@@ -11,7 +11,7 @@ export default function Button({
         <button type="button" className={clsx(
             "px-6 py-2 rounded-lg hover:cursor-pointer border-primary border",
             primary ? "bg-primary text-secondary"
-                : "bg-secondary text-primary"
+                : "bg-background text-primary"
         )}>
             {children}
         </button>
