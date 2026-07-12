@@ -39,7 +39,7 @@ const Section = ({
 
 			id={id}
 			className={clsx(
-			"max-w-7xl w-full mx-auto px-6 py-8 my-18",
+			"max-w-7xl w-full mx-auto px-6 py-8 my-18 scroll-mt-20",
 			className
 		)}>
 			{title && hook && (

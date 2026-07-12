@@ -12,12 +12,20 @@ const Projects = ({ id }: { id: string }) => {
     url: string,
     img_path: string
   }[] = [
-    { 
-      title: "Domain Name Server (DNS)",
-      description: "Configured an authoritative DNS server using BIND9 on Ubuntu Server with custom zones, records, and name resolution.",
-      url: "https://github.com/drewdelrosario/homelab-dns-recursive-server",
-      img_path: "/images/dns-server.png"
+    {
+      title: "Domain Name System (DNS)",
+      description:
+        "Built a multi-server DNS infrastructure on Ubuntu Server using BIND9 with separate Root, Authoritative, and Recursive DNS servers. Configured zone delegation, DNS records, and end-to-end name resolution.",
+      url: "https://github.com/drewdelrosario/homelab-dns-server",
+      img_path: "/images/thumbnails/dns-server.svg"
     },
+    {
+      title: "Mail Server",
+      description:
+        "Built a self-hosted mail server on Ubuntu Server using Postfix. Configured local user accounts for mail delivery, and tested end-to-end email transmission within a homelab environment.",
+      url: "https://github.com/drewdelrosario/homelab-mail-server",
+      img_path: "/images/thumbnails/mail-server.svg"
+    }
   ]
 
 
@@ -32,7 +40,7 @@ const Projects = ({ id }: { id: string }) => {
           <a key={p.title} href={p.url} target="_blank" rel="noopener noreferrer">
             <motion.div
               initial = {{
-                scale: 0.8,
+                scale: 0.9,
                 opacity: 0
               }}
 
@@ -50,7 +58,7 @@ const Projects = ({ id }: { id: string }) => {
                 amount: 0.3
               }}
 
-              className="bg-background shadow-2xl h-90 rounded-2xl flex flex-col items-center p-8"
+              className="bg-card shadow-sm border-zinc-200 h-96 rounded-2xl flex flex-col items-center p-8"
             >
               <Image
                 src={p.img_path}
@@ -60,7 +68,7 @@ const Projects = ({ id }: { id: string }) => {
                 className="mb-6"
               />
 
-              <h2 className="font-bold text-2xl mb-4">{p.title}</h2>
+              <h2 className="font-bold text-2xl mb-auto">{p.title}</h2>
               <p className="text-center text-muted">{p.description}</p>
 
             </motion.div>

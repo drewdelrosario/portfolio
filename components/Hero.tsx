@@ -28,7 +28,7 @@ const Hero = () => {
 				<div className="relative ">
 					<Image 
 						loading="eager"
-						src={"/images/me-01-transparent.png"}
+						src={"/images/me/me-01-transparent.png"}
 						alt="me"
 						width={592}
 						height={740}
