@@ -9,7 +9,7 @@ export default function Button({
 }) {
     return (
         <button type="button" className={clsx(
-            "px-6 py-2 rounded-lg hover:cursor-pointer border-primary border",
+            "px-4 py-2 rounded-lg hover:cursor-pointer border-primary border",
             primary ? "bg-primary text-secondary"
                 : "bg-background text-primary"
         )}>

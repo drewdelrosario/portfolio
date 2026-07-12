@@ -35,7 +35,11 @@ export default function Header() {
 						))}
 					</ul>
 				</nav>
-				<Button primary>Let's Talk</Button>
+				<a href="/resume.pdf" download="Andrew_Del_Rosario_Resume.pdf"
+					className="bg-primary text-secondary px-4 py-2 rounded-lg border-primary border"
+				>
+					Download Resume
+				</a>
 			</div>
 		</header>
 	)

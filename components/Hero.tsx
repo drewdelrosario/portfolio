@@ -2,6 +2,7 @@ import Image from "next/image"
 import Button from "@/components/Button"
 import { GeistPixelSquare } from "geist/font/pixel"
 import Section from "@/components/Section"
+import Link from "next/link"
 
 const Hero = () => {
 	return (
@@ -18,8 +19,12 @@ const Hero = () => {
 					</p>
 
 					<div className="flex gap-x-4">
-						<Button primary>View Projects</Button>
-						<Button>Contact Me</Button>
+						<Link href={"#projects"}
+							className="bg-primary text-secondary px-4 py-2 rounded-lg border-primary border"
+						>View Projects</Link>
+						<a href={"mailto:drew.delrosario@outlook.com"}
+							className="bg-background text-primary px-4 py-2 rounded-lg border-primary border"
+						>Contact Me</a>
 					</div>
 				</div>
 			</div>
