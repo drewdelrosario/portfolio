@@ -17,7 +17,7 @@ const Home = () => {
 			<Hero />
 			<Projects id="projects"/>
 			<Skills id="skills"/>
-			{/* <Contact id="contact"/> */}
+			<Contact id="contact"/>
 		</>
   )
 }
