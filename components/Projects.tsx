@@ -35,9 +35,9 @@ const Projects = ({ id }: { id: string }) => {
       title="Projects"
       hook="What I've Built"
     >
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(min(280px,100%),1fr))] gap-6 px-4 sm:px-6">
         {projects.map((p) => (
-          <a key={p.title} href={p.url} target="_blank" rel="noopener noreferrer">
+          <a key={p.title} href={p.url} target="_blank" rel="noopener noreferrer" className="block h-full">
             <motion.div
               initial = {{
                 scale: 0.9,
@@ -58,18 +58,18 @@ const Projects = ({ id }: { id: string }) => {
                 amount: 0.3
               }}
 
-              className="bg-card shadow-sm border-zinc-200 h-96 rounded-2xl flex flex-col items-center p-8"
+              className="bg-card shadow-sm border-zinc-200 h-full min-h-96 rounded-2xl flex flex-col items-center p-6 sm:p-8"
             >
               <Image
                 src={p.img_path}
-                alt="DNS png"
+                alt={p.title}
                 width={125}
                 height={125}
-                className="mb-6"
+                className="mb-6 w-24 h-24 sm:w-31.25 sm:h-31.25"
               />
 
-              <h2 className="font-bold text-2xl mb-auto">{p.title}</h2>
-              <p className="text-center text-muted">{p.description}</p>
+              <h2 className="font-bold text-xl sm:text-2xl text-center">{p.title}</h2>
+              <p className="text-center text-muted mt-4">{p.description}</p>
 
             </motion.div>
           </a>
