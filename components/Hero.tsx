@@ -36,7 +36,7 @@ const Hero = () => {
 						width={592}
 						height={740}
 						draggable={false}
-						className="w-full max-w-[260px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-none lg:w-[592px] h-auto"
+						className="w-full max-w-65 sm:max-w-[320px] md:max-w-95 lg:max-w-none lg:w-148 h-auto"
 					/>
 					<div className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/3 w-40 h-48 sm:w-60 sm:h-72 md:w-80 md:h-96 lg:w-125 lg:h-150 rounded-full bg-primary/10 blur-3xl -z-10" />
 					<div className="absolute inset-x-0 bottom-0 h-32 bg-linear-to-b from-transparent to-background" />
