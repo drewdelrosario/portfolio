@@ -67,21 +67,21 @@ const Skills = ({ id }: { id: string }) => {
       hook="What I Work With"
     >
       <motion.div
-        className="h-auto flex flex-wrap gap-6"
+        className="h-auto flex flex-wrap gap-3 sm:gap-4 md:gap-6 px-4 sm:px-6"
       >
         {skills.map((s) => (
           <div 
             key={s.title}
-            className="flex py-2 px-4 items-center justify-between bg-card shadow-sm border-zinc-200 rounded-full"
+            className="flex py-1.5 px-3 sm:py-2 sm:px-4 items-center justify-between bg-card shadow-sm border-zinc-200 rounded-full"
           >
             <Image src={s.img_path}
-              alt={s.img_path}
+              alt={s.title}
               width={25}
               height={25}
-              className="mr-3"
+              className="mr-2 sm:mr-3 w-5 h-5 sm:w-6.25 sm:h-6.25"
             />
 
-            <h2 className="text-lg">{s.title}</h2>
+            <h2 className="text-base sm:text-lg">{s.title}</h2>
           </div>
         ))}
       </motion.div>
